@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2018_04_29_212637) do
   enable_extension "plpgsql"
 
   create_table "order_items", force: :cascade do |t|
-    t.integer "quanity"
+    t.integer "quantity"
     t.bigint "product_id"
     t.bigint "order_id"
   end
